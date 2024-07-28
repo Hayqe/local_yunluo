@@ -1,0 +1,25 @@
+<manifest>
+    <!-- Remotes -->
+    <remote name="lineageos" fetch="https://github.com/LineageOS" revision="lineage-21" />
+    <remote name="hayqe" fetch="https://github.com/hayqe" revision="lineage-21" />
+  
+
+
+    <!-- Device / Kernel prebuilts -->
+    <project path="device/xiaomi/yunluo" name="android_device_xiaomi_yunluo" remote="hayqe" />
+    <project path="device/xiaomi/yunluo-kernel" name="android_device_xiaomi_yunluo-kernel" remote="hayqe" />
+   
+    
+    <!-- selinux -->
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr"
+        remote="lineageos" />
+
+    <!-- Hardware for yunluo / mediatek-->
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineageos" />
+    <project path="hardware/mediatek" name="android_hardware_mediatek" remote="hayqe" />
+
+    <!-- Proprietary vendor -->
+    <project path="vendor/xiaomi/yunluo" name="android_vendor_xiaomi_yunluo" remote="hayqe" />
+
+   
+</manifest>
